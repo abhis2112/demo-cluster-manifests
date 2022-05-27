@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  fabricinfras.netop.mgr.yaml: |
+    "name:fabric14, ns:netop-manager, status:{\"argo_app\":\"kubectl apply -f https://raw.githubusercontent.com/networkoperator/demo-cluster-manifests/sumit-test-1/fabric-manager/argo/fabric14/argo_app.yaml\"}"
+kind: ConfigMap
+metadata:
+  labels:
+    netop-manager: fabricinfras.netop.mgr
+  name: fabricinfras.netop.mgr
+  namespace: netop-manager
