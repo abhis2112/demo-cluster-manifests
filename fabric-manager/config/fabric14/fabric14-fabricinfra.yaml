@@ -32,7 +32,7 @@ spec:
     - 104
   credentials:
     hosts:
-    - 172.18.184.140
+    - 172.28.184.140
     login:
       password: dummy
       username: dummy
