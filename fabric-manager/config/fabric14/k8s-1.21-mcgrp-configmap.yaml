@@ -14,25 +14,5 @@ data:
     service_vlan: 102
 kind: ConfigMap
 metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"machinegroupprofile_overrides":"extern_dynamic: 10.3.112.1/21\nextern_static: 10.4.112.1/21\nfabric_name: fabric14\nkubeapi_vlan: 101\nmcast_range:\n  start: 225.114.1.1\n  end: 225.114.255.255\nnode_subnet: 1.100.101.1/24\nnode_svc_subnet: 10.5.112.1/21\npod_subnet: 10.2.0.1/16\nservice_vlan: 102\n"},"kind":"ConfigMap","metadata":{"annotations":{},"name":"k8s-1.21","namespace":"netop-manager"}}
-  creationTimestamp: "2022-05-28T00:36:31Z"
-  managedFields:
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:data:
-        .: {}
-        f:machinegroupprofile_overrides: {}
-      f:metadata:
-        f:annotations:
-          .: {}
-          f:kubectl.kubernetes.io/last-applied-configuration: {}
-    manager: kubectl-client-side-apply
-    operation: Update
-    time: "2022-05-28T00:36:31Z"
   name: k8s-1.21
   namespace: netop-manager
-  resourceVersion: "6255269"
-  uid: f79df0fa-5e5d-4925-9ceb-a40c0c4bfed8
