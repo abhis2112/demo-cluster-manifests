@@ -5,6 +5,8 @@ metadata:
   namespace: netop-manager
 spec:
   cluster_input:
+    cni:
+      target_version: 5.2.3.3
     profile:
       cni: kubernetes-1.22
       loadbalancer: fabric
