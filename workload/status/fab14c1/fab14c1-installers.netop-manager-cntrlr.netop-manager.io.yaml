@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  installers.netop-manager-cntrlr.netop-manager.io.yaml: |
+    "name:sample-installer, ns:netop-manager-system, status:{\"clusterOverview\":{\"nodes\":\"5\",\"ns\":\"10\",\"pods\":\"37\",\"svc\":\"6\"},\"observedGeneration\":1,\"state\":\"SentryMode\"}"
+kind: ConfigMap
+metadata:
+  labels:
+    netop-manager-resource: installers.netop-manager-cntrlr.netop-manager.io
+  name: fab14c1-installers.netop-manager-cntrlr.netop-manager.io
+  namespace: 
