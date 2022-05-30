@@ -14,5 +14,7 @@ data:
     service_vlan: 102
 kind: ConfigMap
 metadata:
+  labels:
+    cluster: cluster-1
   name: k8s-1.21
   namespace: netop-manager
