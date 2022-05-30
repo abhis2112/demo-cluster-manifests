@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
   installers.netop-manager-cntrlr.netop-manager.io.yaml: |
-    "name:installer-sample, ns:netop-manager-system, status:{\"deployedIntent\":{\"cko-cni\":{\"op\":\"applied\",\"type\":\"unmanaged\"},\"cko-monitoring\":{\"op\":\"applied\",\"type\":\"cko-m-prometheus\"}},\"observedGeneration\":1,\"state\":\"SentryMode\"}"
+    "name:installer-sample, ns:netop-manager-system, status:{\"clusterOverview\":{\"nodes\":\"2\",\"ns\":\"6\",\"pods\":\"10\",\"svc\":\"5\"},\"deployedIntent\":{\"cko-cni\":{\"op\":\"applied\",\"type\":\"unmanaged\"},\"cko-monitoring\":{\"op\":\"applied\",\"type\":\"cko-m-prometheus\"}},\"observedGeneration\":1,\"state\":\"SentryMode\"}"
 kind: ConfigMap
 metadata:
   labels:
