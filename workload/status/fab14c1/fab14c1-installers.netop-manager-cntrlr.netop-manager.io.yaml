@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
   installers.netop-manager-cntrlr.netop-manager.io.yaml: |
-    "name:sample-installer, ns:netop-manager-system, status:{\"clusterOverview\":{\"nodes\":\"5\",\"ns\":\"13\",\"pods\":\"36\",\"svc\":\"5\"},\"observedGeneration\":3,\"state\":\"SentryMode\"}"
+    "name:sample-installer, ns:netop-manager-system, status:{\"clusterOverview\":{\"nodes\":\"5\",\"ns\":\"13\",\"pods\":\"31\",\"svc\":\"5\"},\"observedGeneration\":3,\"state\":\"SentryMode\"}"
 kind: ConfigMap
 metadata:
   labels:
