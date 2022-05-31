@@ -1,89 +1,20 @@
 apiVersion: netop.mgr/v1
 kind: MachineGroupProfile
 metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"netop.mgr/v1","kind":"MachineGroupProfile","metadata":{"annotations":{},"labels":{"computes":"BAREMETAL","distro":"K8S-1.21","location":"ON-PREM","network-infra":"ACI","pod-network":"ACI-CNI"},"name":"k8s-1.21","namespace":"netop-manager"},"spec":{"aep":"sauto-aep","l3out":{"external_networks":["l3out_1_net"],"name":"l3out-1"},"selector":{"matchLabels":{"fabric":"4.2.7f","site":"BUILDING-15-LAB"}},"server_count":5,"vrf":{"name":"l3out_1_vrf","tenant":"common"}}}
-  creationTimestamp: "2022-05-29T17:38:21Z"
-  generation: 1
   labels:
     computes: BAREMETAL
     distro: K8S-1.21
     location: ON-PREM
     network-infra: ACI
     pod-network: ACI-CNI
-  managedFields:
-  - apiVersion: netop.mgr/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          .: {}
-          f:kubectl.kubernetes.io/last-applied-configuration: {}
-        f:labels:
-          .: {}
-          f:computes: {}
-          f:distro: {}
-          f:location: {}
-          f:network-infra: {}
-          f:pod-network: {}
-      f:spec:
-        .: {}
-        f:aep: {}
-        f:l3out:
-          .: {}
-          f:external_networks: {}
-          f:name: {}
-        f:selector:
-          .: {}
-          f:matchLabels:
-            .: {}
-            f:fabric: {}
-            f:site: {}
-        f:server_count: {}
-        f:vrf:
-          .: {}
-          f:name: {}
-          f:tenant: {}
-    manager: kubectl-client-side-apply
-    operation: Update
-    time: "2022-05-29T17:38:21Z"
-  - apiVersion: netop.mgr/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:status:
-        .: {}
-        f:extern_dynamic: {}
-        f:extern_static: {}
-        f:fabric_name: {}
-        f:kubeapi_vlan: {}
-        f:l3out:
-          .: {}
-          f:svi: {}
-        f:mcast_range:
-          .: {}
-          f:end: {}
-          f:start: {}
-        f:node_subnet: {}
-        f:node_svc_subnet: {}
-        f:pod_subnet: {}
-        f:service_vlan: {}
-    manager: manager
-    operation: Update
-    subresource: status
-    time: "2022-05-29T17:38:21Z"
   name: k8s-1.21
   namespace: netop-manager
-  resourceVersion: "6573325"
-  uid: 2ef75b79-2632-4254-b9c9-2c0a6a43b56f
 spec:
   aep: sauto-aep
   l3out:
     external_networks:
     - l3out_1_net
     name: l3out-1
-    svi: {}
-  physical_domain: {}
   selector:
     matchLabels:
       fabric: 4.2.7f
@@ -92,18 +23,3 @@ spec:
   vrf:
     name: l3out_1_vrf
     tenant: common
-status:
-  extern_dynamic: 10.3.112.1/21
-  extern_static: 10.4.112.1/21
-  fabric_name: fabric14
-  kubeapi_vlan: 101
-  l3out:
-    svi: {}
-  mcast_range:
-    end: 225.114.255.255
-    start: 225.114.1.1
-  node_subnet: 1.100.101.1/24
-  node_svc_subnet: 10.5.112.1/21
-  pod_subnet: 10.2.0.1/16
-  service_vlan: 102
-  state: READY
